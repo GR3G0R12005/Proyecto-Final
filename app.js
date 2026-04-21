@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+          background: linear-gradient(135deg, #1a0000, #4a0000, #2d0a0a);
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           color: #fff;
           overflow: hidden;
@@ -27,21 +27,21 @@ app.get('/', (req, res) => {
           background: rgba(255, 255, 255, 0.05);
           border-radius: 20px;
           backdrop-filter: blur(10px);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 77, 77, 0.2);
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
           animation: fadeIn 1s ease-out;
         }
         h1 {
           font-size: 3.5rem;
           margin-bottom: 1rem;
-          background: linear-gradient(90deg, #a78bfa, #60a5fa, #34d399);
+          background: linear-gradient(90deg, #ff4d4d, #ff8a80, #ffcdd2);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           animation: glow 3s ease-in-out infinite alternate;
         }
         .subtitle {
           font-size: 1.2rem;
-          color: #a5b4fc;
+          color: #ff8a80;
           margin-bottom: 2rem;
         }
         .badges {
@@ -57,10 +57,10 @@ app.get('/', (req, res) => {
           font-size: 0.85rem;
           font-weight: 600;
         }
-        .badge.node { background: #22c55e20; color: #4ade80; border: 1px solid #22c55e40; }
-        .badge.docker { background: #3b82f620; color: #60a5fa; border: 1px solid #3b82f640; }
-        .badge.cicd { background: #a78bfa20; color: #a78bfa; border: 1px solid #a78bfa40; }
-        .badge.render { background: #f59e0b20; color: #fbbf24; border: 1px solid #f59e0b40; }
+        .badge.node { background: #ff4d4d20; color: #ff6b6b; border: 1px solid #ff4d4d40; }
+        .badge.docker { background: #ff8a8020; color: #ff8a80; border: 1px solid #ff8a8040; }
+        .badge.cicd { background: #ef535020; color: #ef5350; border: 1px solid #ef535040; }
+        .badge.render { background: #ffcdd220; color: #ffcdd2; border: 1px solid #ffcdd240; }
         .author {
           font-size: 0.9rem;
           color: #6b7280;
@@ -70,7 +70,7 @@ app.get('/', (req, res) => {
           display: inline-block;
           width: 10px;
           height: 10px;
-          background: #4ade80;
+          background: #ff4d4d;
           border-radius: 50%;
           margin-right: 8px;
           animation: pulse 2s infinite;
@@ -80,7 +80,7 @@ app.get('/', (req, res) => {
           align-items: center;
           justify-content: center;
           font-size: 0.95rem;
-          color: #4ade80;
+          color: #ff6b6b;
         }
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(30px); }
