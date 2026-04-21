@@ -2,10 +2,10 @@ const request = require('supertest');
 const app = require('./app');
 
 describe('API Hola Mundo', () => {
-  test('GET / debe retornar mensaje Hola Mundo', async () => {
+  test('GET / debe retornar pagina con Hola Mundo', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toBe(200);
-    expect(res.body.message).toBe('Hola Mundo');
+    expect(res.text).toContain('Hola Mundo');
   });
 
   test('GET /health debe retornar status ok', async () => {
